@@ -40,9 +40,9 @@ public class SimpleServlet extends HttpServlet {
     		conn = DriverManager.getConnection(JDBC_URL);
     		stmt = conn.createStatement();
     		
-//    		msgPage.append("<br> STEP 4 : Create a new table USER");
-//    		sql = "CREATE TABLE User (name VARCHAR(20), age INTEGER)";
-//   		stmt.execute(sql);
+    		msgPage.append("<br> STEP 4 : Create a new table USER");
+    		sql = "CREATE TABLE User (name VARCHAR(20), age INTEGER)";
+    		stmt.execute(sql);
     		
     		msgPage.append("<br> STEP 5 : Filling the fields records");
     		sql = "INSERT INTO User VALUES(\'Rapha Hespanhol\', 30)";
